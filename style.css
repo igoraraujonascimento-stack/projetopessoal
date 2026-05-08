@@ -73,9 +73,9 @@ footer {
 }
 
 .fa-instagram {
-    color: #E4405F;
+    color: #E4405F !important;
 }
 
 .fa-github {
-    color: #333;
+    color: #333 !important;
 }
