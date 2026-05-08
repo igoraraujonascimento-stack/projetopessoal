@@ -1,0 +1,88 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+/* Cabeçalho */
+header {
+    background-color: #005594; /* Azul SENAI */
+    padding: 20px;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+/* Layout Principal */
+.container {
+    display: flex;
+    flex: 1; /* Faz o conteúdo ocupar o espaço entre header e footer */
+}
+
+/* Menu Lateral */
+.sidebar {
+    width: 250px;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.sidebar ul {
+    list-style: none;
+}
+
+.sidebar ul li {
+    margin-bottom: 15px;
+}
+
+.sidebar ul li a {
+    color: #ccc;
+    text-decoration: none;
+}
+
+.sidebar ul li a:hover {
+    color: white;
+}
+
+/* Conteúdo */
+.content {
+    flex: 1;
+    padding: 40px;
+    background-color: white;
+}
+
+.content h1 {
+    margin-bottom: 20px;
+    color: #005594;
+}
+
+/* Rodapé */
+footer {
+    background-color: #222;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+.social-icons {
+    margin-top: 10px;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 0 10px;
+    filter: invert(1); /* Deixa os ícones brancos */
+}
