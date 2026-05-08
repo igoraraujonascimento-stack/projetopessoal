@@ -25,6 +25,14 @@ header nav ul {
 header nav ul li a {
     color: white;
     text-decoration: none;
+    padding: 10px 16px;
+    background-color: rgba(255, 255, 255, 0.15);
+    border-radius: 8px;
+    transition: background-color 0.2s ease;
+}
+
+header nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.3);
 }
 
 .container {
@@ -44,7 +52,27 @@ aside ul {
 }
 
 aside ul li {
-    margin-bottom: 10px;
+    margin-bottom: 12px;
+}
+
+aside ul li button {
+    width: 100%;
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background-color: #ffffff;
+    color: #003366;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+    text-align: left;
+    transition: background-color 0.2s ease, transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+aside ul li button:hover {
+    background-color: #e8f0ff;
+    transform: translateX(2px);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
 }
 
 main {
@@ -73,9 +101,9 @@ footer {
 }
 
 .fa-instagram {
-    color: #E4405F 
+    color: #E4405F !important;
 }
 
 .fa-github {
-    color: #333 
+    color: #333 !important;
 }
