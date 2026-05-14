@@ -57,6 +57,37 @@ header nav {
     opacity: 1;
 }
 
+/* Posiciona o texto FIEP menor abaixo da parte "ema" de "Sistema" */
+.header-brand .ema {
+    position: relative;
+    display: inline-block;
+}
+
+.header-brand .ema .fiep-text {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    transform: translateY(6px);
+    font-size: 0.6rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+/* Cinco traços à direita do 'Sistema FIEP' */
+.header-brand::after {
+    content: "";
+    position: absolute;
+    left: calc(100% + 10px);
+    top: 20%;
+    width: 12px;
+    height: 2px;
+    background: #ffffff;
+    border-radius: 2px;
+    box-shadow: 0 6px 0 0 #ffffff, 0 12px 0 0 #ffffff, 0 18px 0 0 #ffffff, 0 24px 0 0 #ffffff;
+    pointer-events: none;
+}
+
 header nav ul {
     list-style: none;
     display: flex;
