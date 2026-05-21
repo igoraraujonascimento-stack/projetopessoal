@@ -337,3 +337,46 @@ footer {
 .fa-github {
     color: #333 !important;
 }
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 24px;
+    margin-top: 30px;
+}
+
+.event-card {
+    background-color: #ffffff;
+    border: 2px solid rgba(0, 51, 102, 0.15);
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+    padding: 24px;
+    color: #333333;
+    transition: all 0.3s ease;
+}
+
+.event-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 14px 30px rgba(0, 0, 0, 0.15);
+    border-color: rgba(0, 51, 102, 0.3);
+}
+
+.event-card h3 {
+    margin-top: 0;
+    margin-bottom: 16px;
+    color: #003366;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.event-card p {
+    margin: 10px 0;
+    line-height: 1.6;
+    font-size: 15px;
+    color: #555555;
+}
+
+.event-card p:first-of-type {
+    font-weight: 600;
+    color: #003366;
+}
